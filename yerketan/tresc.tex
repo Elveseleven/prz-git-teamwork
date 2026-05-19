@@ -1,4 +1,15 @@
-\chapter{My System Architecture Chapter}
-\section{Introduction to Distributed Git}
-Here is the main text body block.
-This is a new line added in the isolated feature branch.
+\section{Distributed Version Control Systems}
+\subsection{Architecture of Git Platforms}
+
+Unlike older centralized configuration management systems, a distributed version 
+control system (DVCS) like Git mirrors the entire repository structure, complete with 
+its full history tree, onto every developer's local node. This eliminates the reliance 
+on a singular point of failure during local operations.
+
+In our current project framework, we simulated independent developer environments 
+by establishing distinct local working trees. Each independent workspace manages its own 
+staging configurations and tracking branch objects. 
+
+Our remote collaboration mechanics rely on synchronization states hosted on GitHub, allowing 
+us to pull upstream adjustments, push isolated feature development structures, and inspect 
+author accountability metrics securely.
